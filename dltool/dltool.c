@@ -284,14 +284,6 @@ int main(int argc, char **argv)
 	printf("=> found device: bus %s, dev %s\n",
 	       result->bus->dirname, result->filename);
 
-	dl_data = load_file(dl_file, &dl_size, &fsize);
-	if (dl_data == NULL) {
-		printf("failed to load %s\n", dl_file);
-		return 1;
-	}
-
-	printf("=> loaded %ld bytes from %s\n", fsize, dl_file);
-
 	devh = usb_open(result);
 	if (devh == NULL) {
 		perror("usb_open");
