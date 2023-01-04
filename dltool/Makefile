@@ -8,7 +8,7 @@
 .PHONY:	clean
 
 dltool:	dltool.c
-	xcrun clang -fsanitize=address -O2 -Wall -g -lusb -o smdk-usbdl dltool.c
+	clang -fsanitize=address -O2 -Wall -g -lusb -o smdk-usbdl dltool.c
 
 clean:
 	-rm smdk-usbdl
