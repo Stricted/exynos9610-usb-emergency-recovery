@@ -296,13 +296,13 @@ int main(int argc, char **argv)
 	}
 
 	char *files[] = {
-		"part1.bin",
-		"part2.bin",
-		"part3.bin",
-		"part1.bin",
-		"part4.bin",
-		"part5.bin",
-		"part6.bin",
+		"fwbl1.img",
+		"epbl.img",
+		"bl2.img",
+		"lk.bin",
+		"el3_mon.img",
+		"ldfw.img",
+		"tzsw.img",
 	};
 	free(dl_data);
 	dl_data = NULL;
