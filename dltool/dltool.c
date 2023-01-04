@@ -294,11 +294,6 @@ int main(int argc, char **argv)
 		usb_close(devh);
 		return 1;
 	}
-	if (usb_set_configuration(devh, 1) < 0) {
-		perror("usb_set_configuration");
-		usb_close(devh);
-		return 1;
-	}
 
 	char *files[] = {
 		"part1.bin",
