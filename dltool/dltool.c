@@ -191,7 +191,7 @@ int main(int argc, char **argv)
 		int index = 0;
 		int c;
 
-		c = getopt_long(argc, argv, "a:b:d:f:s", long_opts, &index);
+		c = getopt_long(argc, argv, "a:b:d:f:s:x", long_opts, &index);
 
 		DBG(("option index %d\n",c ));
 
